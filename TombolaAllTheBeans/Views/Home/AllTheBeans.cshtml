@@ -1,0 +1,12 @@
+﻿@model TombolaAllTheBeans.Models.Bean
+@{
+    ViewBag.Title = "Todays Bean!";
+}
+
+<div class="jumbotron">
+    <h1>@Model.Name</h1>
+    <p class="lead">@Model.Colour</p>
+    <p class="lead">@Model.Aroma</p>
+    <p><img src="@Model.ImageUrl" alt="@Model.Name" style="width:100%" /></p>
+    <p class="lead">£@Model.Price per 100g</p>
+</div>
